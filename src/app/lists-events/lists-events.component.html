@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-sm-6 mb-3" *ngFor='let e of events'>
+    <app-view-event [events]='e'(deleteEvent)='deleteChild($event)'></app-view-event>
+
+   
+  </div>
+</div>
